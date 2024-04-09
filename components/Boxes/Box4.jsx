@@ -22,7 +22,17 @@ const Box4 = () => {
         >
           Move right
         </button>
-        <button className={classnames.boxBtn}>Move left</button>
+        <button
+          onClick={() =>
+            control.start({
+              x: 0,
+              transition: { duration: 2 },
+            })
+          }
+          className={classnames.boxBtn}
+        >
+          Move left
+        </button>
         <button className={classnames.boxBtn}>Circle</button>
         <button className={classnames.boxBtn}>Square</button>
         <button className={classnames.boxBtn}>Stop</button>
